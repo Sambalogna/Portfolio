@@ -31,40 +31,42 @@ h2 {
     border: 1px dashed green;
 }
 
-/* makes section into a flexbox for asides and figures */
-
-section {
+article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-/* makes asides occupy 10% of the left of the page in the section flexbox */
-aside{
-    justify-content: left;
-    flex: 0 0 10%;
-    border-right: 2px solid black;
+section {
+    flex: 0 0 100%;
 }
-/* turns the figure occupying the left 90% of section flexbox into a flex container*/
+
 figure {
     display: flex;
     flex-direction: row;
+}
+
+aside{
+    text-align: center;
+    flex: 0 0 10%;
+    border-right: 2px solid black;
+}
+
+#container {
+    flex: 0 0 90%;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
-#info{
-    
-}
-/*showcase occupies 100% of the first row of the flex container in figure */
 #showcase {
-    flex: 0 0 100%;
-    text-align: center;
+    flex: 0 0 90%;
 }
-
-/* gives divs containing small projects 50% of flexbox and centered */
 #smallProject{
-    flex: 0 0 50%;
-    text-align: center;
+    flex: 0 0 45%;
+}
+img {
+    width: 100%;
+    height: 100%;
 }
 
 
