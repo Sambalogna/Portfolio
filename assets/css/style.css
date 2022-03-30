@@ -4,12 +4,11 @@ body{
     font-family: 'Trebuchet MS','Times New Roman', Times, serif;
 }
 
-
+/* nav and header */
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
     background-color: olivedrab;
     color: black;
     width: 96%;
@@ -18,6 +17,7 @@ header{
 h1 {
     display: flex;
     font-size: 150%;
+    padding-left: 1%;
 }
 
 nav ul {
@@ -25,12 +25,24 @@ nav ul {
     justify-content: space-between;
     min-width: 250px;
     list-style: none;
+    
 }
-
+nav {
+    padding-right: 2%;
+}
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+nav a:hover{
+    background-color: blue;
+    border-radius: 7px;
+}
+/* banner and below */
 main {
-    background: red;
+    background: #D2042D;
     width: 96%;
-    margin: 1% auto;
+    margin: 0 auto;
 }
 
 h2 {
@@ -38,13 +50,15 @@ h2 {
     background: aliceblue;
     border: 2px dashed green;
     text-align: center;
-    background-image: linear-gradient(to bottom right,olivedrab, red);
+    background-image: linear-gradient(to bottom right,olivedrab, #D2042D);
     margin-bottom: auto;
     animation-name: move;
     animation-duration: 4s;
-    animation-iteration-count: infinite;    
+    animation-iteration-count: infinite; 
 }
 
+
+/*main container for 3 sections  */
 article {
     display: flex;
     flex-direction: row;
@@ -54,6 +68,7 @@ article {
 h3 {
     padding-right: 3%;
 }
+/* sections contain a figure containing flexboxes for the aside information and other containers */
 section {
     flex: 0 0 100%;
 }
@@ -81,17 +96,25 @@ aside{
 #showcase {
     flex: 0 0 100%;
     padding-left: .5em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+
     position: relative;
 }
 
 #showcaseTitle{
     position: absolute;
-    margin-bottom: -2em;
+    margin-bottom: -1em;
     margin-left: .5rem;
     margin-right: 80%;
+    /* makes title stay in one line */
+    white-space: nowrap;
+    background-color: gray;
+    opacity: 80%;
+    border-radius: 7px;
     
+}
+#showcaseTitle:hover{
+    background-color: blue;
+    color: white;
 }
 img {
     width: 90%;
@@ -102,6 +125,24 @@ img {
     flex: 0 0 45%;
     padding-left: .5em;
     padding-bottom: 3%;
+}
+
+#smallProjectTitle{
+    display: flex;
+    position: absolute;
+    margin-bottom: -1em;
+    margin-left: .5rem;
+    margin-right: 80%;
+    /* makes title stay in one line */
+    white-space: nowrap;
+    background-color: gray;
+    opacity: 80%;
+    border-radius: 7px;
+    
+}
+#smallProjectTitle:hover {
+    background-color: blue;
+    color: white;
 }
 
 #info {
@@ -118,7 +159,16 @@ img {
 
 #contactLinks li {
     padding: 0 10px; 
+    color:aliceblue;
 
+}
+#contactLinks a {
+    color: aliceblue;
+    text-decoration: none;
+}
+#contactLinks a:hover{
+    background-color: blue;
+    border-radius: 7px;
 }
 
 
@@ -134,14 +184,14 @@ footer {
     padding-top: 10px;
 }
 
-
+/* banner animation */
 @keyframes move {
     0% {text-align: center;}
     33%{text-align: right;}
     66%{text-align: left;}
     100%{text-align: center;}  
 }
-
+/* changes nav menu orientation to under the main H1 in header */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
