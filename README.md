@@ -40,7 +40,7 @@ aside{
     
 }
 ```
-The right hand side of work needed some additional flexboxes as well as titles that stuck to the image links
+The right hand side of work needed some additional flexboxes as well as titles that stuck to the image links.
 
 ```CSS
 /* main project */
