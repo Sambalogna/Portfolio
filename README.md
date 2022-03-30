@@ -22,7 +22,7 @@ Flexboxes were key to the deployment of this website's formatting within the mai
 
 The asides occupy ten percent of the left of the main portion of the page and all content occupies the right 90% of the flex boxes.
 
-This code shows how I achieved this on the work portion of the webpage.
+This code shows how I achieved splitting the figure containing the work portion of the webpage.
 
 ```CSS
 aside{
@@ -37,6 +37,58 @@ aside{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
+}
+```
+The right hand side of work needed some additional flexboxes as well as titles that stuck to the image links
+
+```CSS
+/* main project */
+#showcase {
+    flex: 0 0 100%;
+    padding-left: .5em;
+
+    position: relative;
+}
+
+#showcaseTitle{
+    position: absolute;
+    margin-bottom: -1em;
+    margin-left: .5rem;
+    margin-right: 80%;
+    /* makes title stay in one line */
+    white-space: nowrap;
+    background-color: gray;
+    opacity: 80%;
+    border-radius: 7px;
+    
+}
+#showcaseTitle:hover{
+    background-color: blue;
+    color: white;
+}
+img {
+    width: 90%;
+    height: 90%;
+}
+/* small projects */
+.smallProject{
+    flex: 0 0 45%;
+    padding-left: .5em;
+    padding-bottom: 3%;
+}
+
+#smallProjectTitle{
+    display: flex;
+    position: absolute;
+    margin-bottom: -1em;
+    margin-left: .5rem;
+    margin-right: 80%;
+    /* makes title stay in one line */
+    white-space: nowrap;
+    background-color: gray;
+    opacity: 80%;
+    border-radius: 7px;
     
 }
 ```
