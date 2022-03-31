@@ -6,9 +6,10 @@
 This is a website built to host links and previews of the work I have done. 
 
 
-## Site Picture
+## Site Picture && Link
 
-![site](./assets/images/Portfolio_Snippet.PNG)
+![site](https://media.giphy.com/media/dj4fnE1bia7b3B9m9F/giphy.gif)
+[My_portfolio](https://sambalogna.github.io/Portfolio/)
 
 ## Technologies Used
 - HTML - provided elements to the page
